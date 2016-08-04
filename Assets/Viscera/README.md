@@ -1,4 +1,4 @@
-# Viscera
+﻿# Viscera
 Viscera is basically a super inspector that can show a lot of things that unity inspector won't. It will give you great convenience when you want a quick look to the states of your object. You will no longer need to set a breakpoint to watch the value or insert a Debug.Log to print it out.
 
 **Features:**
