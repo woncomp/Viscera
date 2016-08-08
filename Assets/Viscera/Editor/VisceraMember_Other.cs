@@ -90,6 +90,15 @@ namespace Viscera
             {
                 EditorGUILayout.LabelField("NULL", GUILayout.ExpandWidth(true));
             }
+            else if(_value is UnityEngine.Object)
+			{
+				var _ref = (Object)CachedValue;
+				var val = EditorGUILayout.ObjectField(_ref, MemberType, true, GUILayout.ExpandWidth(true));
+				if(val != _ref)
+				{
+					SetValue(val);
+				}
+            }
             else
             {
                 if (GUILayout.Button(S.GoInsideContent, S.GoInsideStyle))
