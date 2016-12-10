@@ -154,7 +154,7 @@ public class ViseraTabPage
         {
             var entity = hierarchy[i];
             var guiContent = new GUIContent(entity.Name);
-            var style = sumWidth > 0 ? S.BreadcrumbMid : S.BreadcrumbLeft;
+            //var style = sumWidth > 0 ? S.BreadcrumbMid : S.BreadcrumbLeft;
             if(GUILayout.Button(guiContent, S.BreadcrumbMid))
             {
                 GUI.FocusControl("");

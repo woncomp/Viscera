@@ -208,7 +208,7 @@ namespace Viscera
         public List<Member> GetElements()
         {
             if (CachedValue == null) return null;
-            var array = (Array)CachedValue;
+            //var array = (Array)CachedValue;
             if (_elementType.IsValueType)
             {
                 if (_cachedElements.Count > _arrayLength)
@@ -316,7 +316,7 @@ namespace Viscera
         public List<Member> GetElements()
         {
             if (CachedValue == null) return null;
-            var list = (System.Collections.IList)CachedValue;
+            //var list = (System.Collections.IList)CachedValue;
             if (_elementType.IsValueType)
             {
                 if (_cachedElements.Count > _listLength)

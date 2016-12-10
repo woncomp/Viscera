@@ -279,7 +279,7 @@ namespace Viscera {
             {
                 if(c.GetInstanceID() == _instanceId)
                 {
-                    if(this._target != c)
+                    if(this._target as Component != c)
                     { 
                         Members.Clear();
                         ScanMembers(c, c.GetType(), Members);
