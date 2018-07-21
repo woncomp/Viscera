@@ -98,7 +98,7 @@ namespace Viscera
                 var entry = memberSelectorEntries[i];
                 if(entry.CheckType(type))
                 {
-                    return entry.Constructor.Invoke(null, new object[]{name, type}) as Member;
+                    return entry.Constructor.Invoke(new object[]{name, type}) as Member;
                 }
             }
             return new Member(name, type);
